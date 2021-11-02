@@ -11,9 +11,8 @@ import org.springframework.data.cassandra.core.mapping.Frozen;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 
@@ -31,7 +30,6 @@ public class Product {
 	private String name;
 	private String description;
 
-    @Getter
     private List<@Frozen Prop> props = new ArrayList<>();
 
     public Product(UUID id, String department, Double price, Instant moment, String name, String description) {

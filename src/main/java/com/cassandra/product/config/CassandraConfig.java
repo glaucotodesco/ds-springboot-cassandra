@@ -2,7 +2,6 @@ package com.cassandra.product.config;
 
 import java.util.Collections;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.cassandra.config.AbstractCassandraConfiguration;
